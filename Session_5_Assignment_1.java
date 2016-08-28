@@ -1,13 +1,11 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+Calculate area of rectangle and triangle using
+single inheritance.
+
  */
 package acadglid;
 
-/**
- *
- * @author My
- */
+//Problem 1
 class Rectangle 
            { 
                int l,b; 
@@ -16,12 +14,12 @@ class Rectangle
                     l=x; 
                     b=y; 
                  } 
-                    int getRectangle() 
+                    int getRectangle() //rectangle area
                      { 
                         return l*b; 
                      } 
            } 
-                   class Triangle extends Rectangle 
+                   class Triangle extends Rectangle //single inheritance
                       { 
                           float a; 
                           Triangle(int v,int u) 
@@ -30,7 +28,7 @@ class Rectangle
                              } 
                                  float getTriangle() 
                                     { 
-                                        a=(float)l/2*l*b; 
+                                        a=(float)l/2*l*b;  //area of triangle
                                         return (a); 
                                     } 
                      } 
